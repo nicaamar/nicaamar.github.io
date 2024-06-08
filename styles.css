@@ -8,7 +8,11 @@
     --clr-black-80: rgba(8, 14, 19, 0.8);
     --clr-black-20: rgba(8, 14, 19, 0.2);
     --panel:var(--clr-black-80);
-    --side-margin: 240px;
+    --side-margin: 15rem;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -23,7 +27,7 @@ header {
     color: var(--bg);
     padding: 1em 0;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 header a {
@@ -38,20 +42,20 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 main {
-    padding: 20px;
+    padding: 2rem;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 
 }
 
 main > div {
     display: grid;
     width: 100%;
-    gap: 20px;
+    gap: 2rem;
 }
 
 main > div > section {
@@ -62,8 +66,8 @@ main > div > section {
 .smlink {
     position: absolute;
     bottom: 0;
-    right: 20px;
-    margin-top: 10px;
+    right: 2rem;
+    margin-top: 1rem;
     font-size: 0.8rem;
 }
 
@@ -71,25 +75,25 @@ footer {
     background-color: var(--panel);
     color: var(--bg);
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
 footer .social-media {
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 footer .social-media a {
     color: var(--bg);
-    margin: 0 10px;
+    margin: 0 1rem;
     text-decoration: none;
     font-size: 1.5em;
 }
 
 .title {
-    min-width: 300px;
+    min-width: 18rem;
 }
 
 .title > * {
@@ -111,33 +115,39 @@ li.active {
 }
 
 .cover {
-    margin-top: 20px;
-    max-width: 680px;
+    margin-top: 2rem;
+    max-width: 42rem;
 }
 
 .top-right-image {
-    max-width: 450px;
+    max-width: 28rem;
     float: right;
 }
 
 .books {
     display: grid;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .book {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     border-bottom: 1px var(--fg) solid;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
 .book p {
-    margin: 0 0 10px 0;
+    margin: 0 0 1rem 0;
 }
 
 .book img {
-    max-width: 160px;
+    max-width: 10rem;
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 8px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -147,7 +157,7 @@ li.active {
 
     main {
         margin: 0 auto;
-        padding: 40px var(--side-margin);
+        padding: 1.5rem var(--side-margin);
     }
 
     nav {
@@ -159,7 +169,7 @@ li.active {
 
     nav ul {
         display: flex;
-        gap: 40px;
+        gap: 2.5rem;
     
     }
 
@@ -171,26 +181,26 @@ li.active {
 @media (max-width: 768px) {
     header, footer {
         text-align: left;
-        padding: 15px;
+        padding: 0.95rem;
     }
 
     .cover {
-        max-width: 580px;
+        max-width: 36.25rem;
     }
     
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 1rem 0;
     }
 
     main {
-        padding: 20px;
+        padding: 2rem;
         display: grid;
-        margin-bottom: 200px;
+        margin-bottom: 12rem;
     }
 
     .book img {
-        max-height: 100px;
+        max-height: 12rem;
     }
 
     header {
