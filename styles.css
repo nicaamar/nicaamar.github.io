@@ -1,9 +1,7 @@
-/* Base styles */
 :root {
     --bg: #fafafa;
     --fg: #0e1c29;
     --clr-blue: #0082bb;
-    /* --clr-blue: #f00; */
     --clr-blue-80: rgba(0, 130, 187, 0.8);
     --clr-blue-20: rgba(0, 130, 187, 0.2);
     --clr-black: var(--clr-white20);
@@ -31,8 +29,6 @@ header {
 header a {
     font-size: 1.8rem;
 }
-
-/* header  */
 
 nav ul {
     list-style-type: none;
@@ -144,9 +140,7 @@ li.active {
     max-width: 160px;
 }
 
-/* Media Queries */
 @media (min-width: 769px) {
-    /* Styles for notebooks and larger devices */
     body {
         background-color: var(--bg);
     }
@@ -175,7 +169,6 @@ li.active {
 }
 
 @media (max-width: 768px) {
-    /* Styles for mobile devices */
     header, footer {
         text-align: left;
         padding: 15px;
