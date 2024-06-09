@@ -3,10 +3,7 @@
     --fg: #0e1c29;
     --clr-blue: #0082bb;
     --clr-blue-80: rgba(0, 130, 187, 0.8);
-    --clr-blue-20: rgba(0, 130, 187, 0.2);
-    --clr-black: var(--clr-white20);
     --clr-black-80: rgba(8, 14, 19, 0.8);
-    --clr-black-20: rgba(8, 14, 19, 0.2);
     --panel:var(--clr-black-80);
     --side-margin: 15rem;
 }
@@ -120,7 +117,7 @@ li.active {
 }
 
 .top-right-image {
-    max-width: 28rem;
+    max-width: 12rem;
     float: right;
 }
 
@@ -134,6 +131,7 @@ li.active {
     gap: 2rem;
     border-bottom: 1px var(--fg) solid;
     padding-bottom: 2rem;
+    align-items: flex-start;
 }
 
 .book p {
@@ -158,6 +156,7 @@ li.active {
     main {
         margin: 0 auto;
         padding: 1.5rem var(--side-margin);
+        margin-bottom: 5rem;
     }
 
     nav {
@@ -179,6 +178,10 @@ li.active {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
     header, footer {
         text-align: left;
         padding: 0.95rem;
